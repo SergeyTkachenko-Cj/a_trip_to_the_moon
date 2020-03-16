@@ -1,0 +1,197 @@
+html,
+body {
+  background: #2d2828;
+  background: radial-gradient(circle, #2d2828 0%, #151515 100%);
+  background-repeat: no-repeat;
+}
+
+/* --------------------------------------------------------------------------- */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+html .stars,
+body .stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  z-index: 0;
+  background-color: #edf2f2;
+}
+html .moon_face,
+body .moon_face {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #edf2f2;
+  background-image: url("b6815c9131ab65fff724704a08928e7f.jpg");
+  background-position: 50% 15%;
+}
+html .moon_face .moon_eye_back,
+body .moon_face .moon_eye_back {
+  position: absolute;
+  left: 60.5%;
+  top: 45%;
+  z-index: 1;
+  width: 2rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #525151;
+}
+html .moon_face .moon_eye_back .moon_eye,
+body .moon_face .moon_eye_back .moon_eye {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 2rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+@keyframes eye_move {
+  0% {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    z-index: 1;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+  }
+  20% {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    z-index: 1;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+  }
+  80% {
+    position: absolute;
+    left: 10%;
+    top: -50%;
+    z-index: 1;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+  }
+  100% {
+    position: absolute;
+    left: 10%;
+    top: -50%;
+    z-index: 1;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+  }
+}
+html .moon_face .moon_eye_back .moon_eye .moon_eye_pupil,
+body .moon_face .moon_eye_back .moon_eye .moon_eye_pupil {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  z-index: 1;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #000;
+  animation: 4s eye_move infinite alternate ease-in-out;
+  animation-delay: 3s;
+}
+html .moon_face .rocket,
+body .moon_face .rocket {
+  position: absolute;
+  left: 0;
+  top: 24.5%;
+  z-index: 1;
+  width: 36%;
+  height: 25%;
+  border-radius: 50%;
+  transform: rotateZ(28deg);
+  border-radius: 0 25% 25% 0;
+  background-color: #151515;
+}
+html .moon_face .rocket .rocket_circle_I,
+html .moon_face .rocket .rocket_circle_II,
+body .moon_face .rocket .rocket_circle_I,
+body .moon_face .rocket .rocket_circle_II {
+  position: absolute;
+  left: 0;
+  top: 21.5%;
+  z-index: 1;
+  width: 5.5rem;
+  height: 3rem;
+  border-radius: 50%;
+  transform: rotateZ(90deg);
+  border-top: 1.5px solid #c9c9c9;
+}
+html .moon_face .rocket .rocket_joint,
+body .moon_face .rocket .rocket_joint {
+  position: absolute;
+  left: 50%;
+  top: 21.5%;
+  z-index: 1;
+  width: 2.2rem;
+  height: 0;
+  border-radius: 50%;
+  border-radius: initial;
+  border-top: 2px dotted #c9c9c9;
+}
+html .moon_face .rocket .rocket_circle_II,
+body .moon_face .rocket .rocket_circle_II {
+  left: 30%;
+}
+html .moon_face .rocket .rocket_bottom,
+body .moon_face .rocket .rocket_bottom {
+  position: absolute;
+  left: -34%;
+  top: 22%;
+  z-index: 1;
+  width: 5.6rem;
+  height: 3rem;
+  border-radius: 50%;
+  transform: rotateZ(90deg);
+  border: 1px solid #c9c9c9;
+  background-color: #1c1c1c;
+}
+html .moon_face .rocket .rocket_bottom .rocket_bottom_circle_I,
+body .moon_face .rocket .rocket_bottom .rocket_bottom_circle_I {
+  position: absolute;
+  left: 7%;
+  top: 12%;
+  z-index: 1;
+  width: 4.5rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1.5px solid #c9c9c9;
+}
+html .moon_face .rocket .rocket_bottom .rocket_bottom_circle_I .rocket_bottom_circle_II,
+body .moon_face .rocket .rocket_bottom .rocket_bottom_circle_I .rocket_bottom_circle_II {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: 1;
+  width: 2.5rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1.5px solid #c9c9c9;
+}
+
+/*# sourceMappingURL=style.css.map */
